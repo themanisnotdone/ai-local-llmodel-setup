@@ -20,11 +20,11 @@ Developers, SREs, and technical users who:
 - Have basic command line and Python familiarity
 
 ## 📂 Repo Structure
-ai-local-llm-setup/
+```ai-local-llm-setup/
 ├── setup/ # Installing tools like Ollama or LM Studio
 ├── workflows/ # How to interact with models
 ├── advanced/ # GPU tuning, performance, privacy
-└── resources/ # Model comparisons, references
+└── resources/ # Model comparisons, references```
 
 ## 🚀 Getting Started
 

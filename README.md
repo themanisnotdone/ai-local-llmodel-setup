@@ -39,3 +39,9 @@ MIT License. Use, modify, and share freely.
 ---
 
 > This is a work-in-progress. Feedback and pull requests are welcome.
+
+ollama run mistral            # Run Mistral 7B
+ollama pull gemma:2b          # Download Gemma 2B model
+ollama list                   # List all models downloaded
+ollama create mymodel -f Modelfile   # Custom model (advanced)
+

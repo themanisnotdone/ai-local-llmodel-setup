@@ -20,3 +20,22 @@ Developers, SREs, and technical users who:
 - Have basic command line and Python familiarity
 
 ## 📂 Repo Structure
+ai-local-llm-setup/
+├── setup/ # Installing tools like Ollama or LM Studio
+├── workflows/ # How to interact with models
+├── advanced/ # GPU tuning, performance, privacy
+└── resources/ # Model comparisons, references
+
+## 🚀 Getting Started
+
+Head to [`setup/ollama.md`](setup/ollama.md) to install your first local LLM interface.
+
+---
+
+## 📜 License
+
+MIT License. Use, modify, and share freely.
+
+---
+
+> This is a work-in-progress. Feedback and pull requests are welcome.

@@ -2,32 +2,31 @@
 
 This guide walks you through installing **Ollama**, a powerful CLI/API tool for running open-source LLMs like LLaMA2, Mistral, and Gemma entirely on your local machine.
 
-> 🧠 **Why Ollama?**
-> - Simple CLI and API for direct model access
-> - Actively developed with wide model support
-> - No cloud dependency—everything runs locally
-> - Perfect for automated, scriptable, or dev workflows
+> 🧠 **Why Ollama?**  
+> Simple CLI and API, no cloud dependency, active development, and easy model management. Ideal for reproducible, scriptable workflows.
 
 ---
 
-## 🪛 1. Install Ollama
+## 🪛 1. Recommended Install via Homebrew (macOS)
 
-### 🖥 macOS / Linux / Windows
+> ✅ Best for Apple Silicon (M1/M2/M3) or Intel Mac users
 
-Visit: [https://ollama.com/download](https://ollama.com/download)
-
-Follow installation instructions for your OS. After install, open your terminal and verify:
+### Step 1: Install Homebrew
 
 ```bash
-ollama run llama2
-This will:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Download the llama2 model (first-time only)
-Launch an interactive shell interface
-🧰 Basic Commands
+echo >> ~/.bash_profile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew services start ollama
 
-ollama run mistral            # Run Mistral 7B
-ollama pull gemma:2b          # Download Gemma 2B model
-ollama list                   # List all models downloaded
-ollama create mymodel -f Modelfile   # Custom model (advanced)
+ollama --version
+
+ollama run mistral
+
+>Will see
+
+>>> Send a message (/? for help)
+
 
